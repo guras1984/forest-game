@@ -11,7 +11,7 @@ body{background:radial-gradient(ellipse at 15% 0%,#254b78 0%,transparent 42%),ra
 .shell{width:min(100%,1000px)}.top{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:0 0 14px}
 .brand{display:flex;align-items:center;gap:12px}.logo{width:48px;height:48px;border-radius:16px;display:grid;place-items:center;background:linear-gradient(145deg,#9af6cf,#4dd7c2);font-size:27px;box-shadow:0 8px 30px #54e3bd33}
 h1{font-size:clamp(19px,3vw,27px);margin:0;letter-spacing:-.7px}.sub{font-size:12px;color:var(--muted);margin-top:3px;letter-spacing:.8px}
-.top-actions{display:flex;gap:8px}.iconbtn,.primary,.secondary{font:inherit;border:1px solid var(--line);color:var(--ink);cursor:pointer;transition:.18s}
+.top-actions{display:flex;gap:8px}.home-link{display:inline-flex;align-items:center;justify-content:center;gap:5px;text-decoration:none;white-space:nowrap}.iconbtn,.primary,.secondary{font:inherit;border:1px solid var(--line);color:var(--ink);cursor:pointer;transition:.18s}
 .iconbtn{background:#ffffff0b;border-radius:12px;padding:10px 13px}.iconbtn:hover,.secondary:hover{background:#ffffff18;transform:translateY(-1px)}
 .layout{display:grid;grid-template-columns:minmax(0,1fr) 230px;gap:14px;align-items:stretch}
 .game-card,.side-card{border:1px solid var(--line);background:var(--panel);backdrop-filter:blur(18px);border-radius:22px;box-shadow:0 24px 70px #0004}
@@ -73,7 +73,7 @@ canvas{width:100%;height:auto;display:block;aspect-ratio: 800 / 560;touch-action
 <div class="shell">
   <header class="top">
     <div class="brand"><div class="logo">🌿</div><div><h1>숲속 대모험</h1><div class="sub">FOREST QUEST · MINI PLATFORMER</div></div></div>
-    <div class="top-actions"><button class="iconbtn" id="shopBtn">🛍 <span class="label">상점</span></button><button class="iconbtn" id="soundBtn" title="소리 켜기/끄기">🔊 <span class="label">소리</span></button><button class="iconbtn" id="pauseBtn">Ⅱ <span class="label">일시정지</span></button><button class="iconbtn" id="restartBtn">↻ <span class="label">다시하기</span></button></div>
+    <div class="top-actions"><a class="iconbtn home-link" href="https://guras1984.github.io/webgame/" aria-label="게임 목록으로 돌아가기">🏠 <span class="label">게임 목록</span></a><button class="iconbtn" id="shopBtn">🛍 <span class="label">상점</span></button><button class="iconbtn" id="soundBtn" title="소리 켜기/끄기">🔊 <span class="label">소리</span></button><button class="iconbtn" id="pauseBtn">Ⅱ <span class="label">일시정지</span></button><button class="iconbtn" id="restartBtn">↻ <span class="label">다시하기</span></button></div>
   </header>
   <main class="layout">
     <section class="game-card">
@@ -265,6 +265,4 @@ document.querySelectorAll('[data-key]').forEach(b=>{const k=b.dataset.key;const 
 makeStage(1);renderShop();draw();
 })();
 </script>
-
-<a href="https://guras1984.github.io/webgame/" aria-label="게임 목록으로 돌아가기" style="position:fixed;top:12px;left:12px;z-index:99999;display:inline-flex;align-items:center;gap:6px;padding:10px 14px;border-radius:12px;background:#ffffff;color:#20304a;border:2px solid #b7f3d5;box-shadow:0 4px 18px #0003;font:700 14px/1.2 system-ui,sans-serif;text-decoration:none;">🏠 게임 목록</a>
 </body></html>
