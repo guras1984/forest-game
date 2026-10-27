@@ -67,6 +67,17 @@ canvas{width:100%;height:auto;display:block;aspect-ratio: 800 / 560;touch-action
   .shop-item p, .shop-item button { grid-column: 1 / -1; }
 }
 
+
+/* Controls live in the bottom instruction panel, below the canvas, never over gameplay. */
+.mobile-control-area{display:block}
+.control-help{display:flex;justify-content:space-between;gap:10px;align-items:center}
+@media(max-width:700px){
+  .tipline.mobile-control-area{display:block!important;margin-top:7px;padding:10px 10px 12px;border:1px solid #ffffff20;border-radius:14px;background:linear-gradient(180deg,#163b31,#1b2a2a 55%,#25211f);}
+  .control-help{font-size:10px;line-height:1.5;flex-wrap:wrap;margin-bottom:8px}
+  .mobile-controls{display:flex!important;position:static;min-height:0;width:100%;margin:0;padding:8px 5px 3px;border:0;border-top:1px solid #ffffff20;border-radius:0;background:transparent;box-shadow:none;pointer-events:none}
+  .dpad{grid-template-columns:repeat(3,clamp(32px,9vw,48px));grid-template-rows:repeat(3,clamp(32px,9vw,48px));}
+  .jump-btn{width:clamp(68px,18vw,92px);height:clamp(68px,18vw,92px)}
+}
 </style>
 </head>
 <body>
@@ -108,6 +119,8 @@ canvas{width:100%;height:auto;display:block;aspect-ratio: 800 / 560;touch-action
           </div>
         </div>
       </div>
+      <div class="tipline mobile-control-area">
+        <div class="control-help"><span>이동 <kbd class="key">←</kbd> <kbd class="key">→</kbd> · 사다리 <kbd class="key">↑</kbd> <kbd class="key">↓</kbd> · 점프 <kbd class="key">SPACE</kbd></span><span>열매를 모두 모으면 다음 스테이지!</span></div>
         <div class="mobile-controls" aria-label="모바일 게임 조작">
           <div class="dpad" aria-label="방향 조작">
             <button class="dir up" data-key="ArrowUp" aria-label="사다리 위로">▲</button>
@@ -118,7 +131,7 @@ canvas{width:100%;height:auto;display:block;aspect-ratio: 800 / 560;touch-action
           </div>
           <button class="jump-btn" data-key="Space" aria-label="점프"><span aria-hidden="true">⬆</span><small>점프</small></button>
         </div>
-      <div class="tipline"><span>이동 <kbd class="key">←</kbd> <kbd class="key">→</kbd> · 사다리 <kbd class="key">↑</kbd> <kbd class="key">↓</kbd> · 점프 <kbd class="key">SPACE</kbd></span><span>열매를 모두 모으면 다음 스테이지!</span></div>
+      </div>
       
     </section>
     <aside class="side">
