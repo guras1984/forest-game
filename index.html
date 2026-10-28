@@ -28,23 +28,11 @@ canvas{width:100%;height:auto;display:block;aspect-ratio: 800 / 560;touch-action
 .side{display:flex;flex-direction:column;gap:14px}.side-card{padding:17px}.side-title{font-size:12px;letter-spacing:1.2px;font-weight:900;color:#b9c7e5;margin-bottom:14px}.mission{display:flex;align-items:center;gap:11px;padding:11px 0;border-bottom:1px solid #ffffff10}.mission:last-child{border:0;padding-bottom:0}.mission-icon{width:36px;height:36px;display:grid;place-items:center;border-radius:12px;background:#ffffff0b;font-size:19px}.mission b{font-size:12px;display:block}.mission small{font-size:11px;color:var(--muted);display:block;margin-top:3px}.pill{margin-left:auto;font-size:11px;font-weight:900;color:var(--gold)}
 .progress-track{height:5px;border-radius:10px;background:#ffffff12;margin-top:8px;overflow:hidden}.progress-track span{height:100%;display:block;width:0;background:linear-gradient(90deg,#ffd879,#ff9b8b);transition:width .2s}
 .tipbox{background:linear-gradient(135deg,#8cf5c712,#78dfff0b);border:1px solid #8cf5c71c;border-radius:15px;padding:13px;font-size:12px;line-height:1.7;color:#c7d6ef}.tipbox strong{color:var(--mint)}
-.shop-overlay{position:absolute;inset:0;z-index:5;background:#071126ed;backdrop-filter:blur(12px);padding:16px;overflow:auto;line-height:normal}.shop-overlay.hidden{display:none}.shop-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px}.shop-head h2{font-size:22px;margin:0}.shop-meta{font-size:12px;color:#b8c8e8;margin:6px 0 14px}.shop-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.shop-item{border:1px solid #ffffff20;background:#ffffff0a;border-radius:14px;padding:12px;text-align:left;min-width:0}.shop-item .shop-icon{font-size:25px}.shop-item b{display:block;font-size:13px;margin:5px 0}.shop-item p{font-size:11px;line-height:1.5;color:#b8c8e8;margin:0 0 9px;min-height:34px}.shop-item button{width:100%;border:0;border-radius:9px;padding:9px 5px;font-weight:900;background:linear-gradient(110deg,#79efc2,#67d8ee);color:#092038}.shop-item button:disabled{background:#ffffff15;color:#8997b5}.shop-note{font-size:10px;color:#9baecc;margin-top:12px;line-height:1.5}.mobile-controls{display:none}
+.shop-overlay{position:absolute;inset:0;z-index:5;background:#071126ed;backdrop-filter:blur(12px);padding:16px;overflow:auto;line-height:normal}.shop-overlay.hidden{display:none}.shop-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px}.shop-head h2{font-size:22px;margin:0}.shop-meta{font-size:12px;color:#b8c8e8;margin:6px 0 14px}.shop-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.shop-item{border:1px solid #ffffff20;background:#ffffff0a;border-radius:14px;padding:12px;text-align:left;min-width:0}.shop-item .shop-icon{font-size:25px}.shop-item b{display:block;font-size:13px;margin:5px 0}.shop-item p{font-size:11px;line-height:1.5;color:#b8c8e8;margin:0 0 9px;min-height:34px}.shop-item button{width:100%;border:0;border-radius:9px;padding:9px 5px;font-weight:900;background:linear-gradient(110deg,#79efc2,#67d8ee);color:#092038}.shop-item button:disabled{background:#ffffff15;color:#8997b5}.shop-note{font-size:10px;color:#9baecc;margin-top:12px;line-height:1.5}
 .toast{position:absolute;left:50%;top:14px;transform:translate(-50%,-10px);background:#101b33eF;border:1px solid #ffffff25;border-radius:20px;padding:9px 15px;font-size:12px;font-weight:800;opacity:0;transition:.2s;pointer-events:none;white-space:nowrap;z-index:2}.toast.show{opacity:1;transform:translate(-50%,0)}
-/* Touch controls sit over the lower edge of the game only on small screens. */
-.mobile-controls{display:none;position:absolute;left:0;right:0;bottom:2.2%;z-index:4;align-items:flex-end;justify-content:space-between;padding:0 3.5%;pointer-events:none;user-select:none;-webkit-user-select:none}
-.dpad{display:grid;grid-template-columns:repeat(3,clamp(35px,10.5vw,58px));grid-template-rows:repeat(3,clamp(35px,10.5vw,58px));gap:3px;pointer-events:auto}
-.mobile-controls button{touch-action:none;-webkit-tap-highlight-color:transparent;display:flex;align-items:center;justify-content:center;color:#f5fbff;font-weight:900;border:1px solid #9edfffaa;background:linear-gradient(145deg,#164a7bd9,#09264ddd);box-shadow:inset 0 1px 2px #ffffff45,0 2px 8px #00132966;backdrop-filter:blur(2px);padding:0;min-width:0;min-height:0}
-.mobile-controls button:active{filter:brightness(1.35);transform:scale(.94)}
-.dpad .dir{font-size:clamp(17px,5vw,25px);border-radius:12px}
-.dpad .up{grid-column:2;grid-row:1}.dpad .left{grid-column:1;grid-row:2}.dpad-center{grid-column:2;grid-row:2;border:1px solid #ffffff25;border-radius:50%;background:#071a35aa}.dpad .right{grid-column:3;grid-row:2}.dpad .down{grid-column:2;grid-row:3}
-.jump-btn{pointer-events:auto;flex-direction:column;gap:0;width:clamp(76px,21vw,112px);height:clamp(76px,21vw,112px);border-radius:50%;border:2px solid #76ffe1!important;background:linear-gradient(145deg,#00b994e8,#006d75e8)!important;box-shadow:inset 0 0 0 4px #ffffff20,0 0 14px #00e8c555!important;font-size:clamp(28px,8vw,42px);margin-bottom:1px}
-.jump-btn small{font-size:clamp(12px,3.4vw,16px);line-height:1.2}
-@media(max-width:700px){.mobile-controls{display:flex!important}.canvas-wrap{isolation:isolate}.overlay,.shop-overlay{z-index:5}.toast{z-index:6}}
-@media(max-width:390px){.mobile-controls{padding:0 3%}.dpad{gap:2px}.dpad .dir{border-radius:10px}}
-
 .footer{text-align:center;color:#687899;font-size:10px;margin-top:14px;letter-spacing:.3px}
 @media(max-width:760px){.top-actions .home-link .label{display:inline}.top-actions .home-link{padding:9px 10px}body{padding:8px;align-items:flex-start}.shell{width:100%}.layout{grid-template-columns:1fr;gap:10px}.side{display:grid;grid-template-columns:1fr 1fr;gap:10px}.side-card{padding:13px}.top{margin-bottom:10px}.top-actions .label{display:none}.hud{gap:5px}.stat{padding:8px 7px}.stat-value{font-size:17px}.game-card{padding:7px;border-radius:17px}.tipline{font-size:10px}.footer{margin-bottom:8px}canvas{width:100%;height:auto;touch-action:none}}
-@media(max-width:420px){.top-actions .home-link{gap:4px;padding:8px 7px;font-size:12px}.shop-grid{grid-template-columns:1fr 1fr}.side{grid-template-columns:1fr}.brand{gap:8px}.logo{width:41px;height:41px}.top-actions{gap:4px}.iconbtn{padding:8px 9px}.hud{grid-template-columns:repeat(4,minmax(0,1fr))}.stat-label{font-size:9px}.stat-value{font-size:14px}.stat{padding:7px 5px}.mobile-controls{gap:5px}.mobile-controls button{font-size:15px;min-height:46px;padding:11px 2px}.modal p{font-size:12px}.char{width:88px;padding:10px 5px}}
+@media(max-width:420px){.top-actions .home-link{gap:4px;padding:8px 7px;font-size:12px}.shop-grid{grid-template-columns:1fr 1fr}.side{grid-template-columns:1fr}.brand{gap:8px}.logo{width:41px;height:41px}.top-actions{gap:4px}.iconbtn{padding:8px 9px}.hud{grid-template-columns:repeat(4,minmax(0,1fr))}.stat-label{font-size:9px}.stat-value{font-size:14px}.stat{padding:7px 5px}.modal p{font-size:12px}.char{width:88px;padding:10px 5px}}
 
 /* Mobile-first refinements */
 @media (max-width: 700px) {
@@ -52,7 +40,7 @@ canvas{width:100%;height:auto;display:block;aspect-ratio: 800 / 560;touch-action
   .app, .game-wrap, .shell { width: 100% !important; max-width: 100% !important; }
   .game-frame, .game-container { border-radius: 0 !important; }
   canvas { touch-action: none; }
-  .mobile-controls { display: flex !important; }
+  
   .shop-overlay { padding: 12px; }
   .shop-head h2 { font-size: 20px; }
   .shop-grid { grid-template-columns: repeat(2, minmax(0,1fr)); gap: 8px; }
@@ -68,9 +56,21 @@ canvas{width:100%;height:auto;display:block;aspect-ratio: 800 / 560;touch-action
 }
 
 
-.rush{display:flex;flex-wrap:wrap;gap:8px;justify-content:space-between;padding:8px 4px 12px;font-size:11px;color:#b4d3d8}.rush b{color:#ffd879}.rush-track{width:100%;height:5px;background:#ffffff12;border-radius:9px;overflow:hidden}.rush-track i{display:block;width:0;height:100%;background:linear-gradient(90deg,#80ffd4,#ffe08a,#ff95bd);transition:width .1s}.game-card{background:linear-gradient(145deg,rgba(23,43,60,.95),rgba(9,18,37,.96));box-shadow:0 30px 100px #0007,inset 0 1px #ffffff12}.canvas-wrap{box-shadow:0 0 40px #61e5b20a}.dpad{grid-template-rows:clamp(46px,12vw,64px);grid-template-columns:repeat(3,clamp(40px,11vw,60px))}.dpad .left,.dpad .right,.dpad-center{grid-row:1}.modal h2{color:#effff6}.primary{letter-spacing:.4px}
+.rush{display:flex;flex-wrap:wrap;gap:8px;justify-content:space-between;padding:8px 4px 12px;font-size:11px;color:#b4d3d8}.rush b{color:#ffd879}.rush-track{width:100%;height:5px;background:#ffffff12;border-radius:9px;overflow:hidden}.rush-track i{display:block;width:0;height:100%;background:linear-gradient(90deg,#80ffd4,#ffe08a,#ff95bd);transition:width .1s}.game-card{background:linear-gradient(145deg,rgba(23,43,60,.95),rgba(9,18,37,.96));box-shadow:0 30px 100px #0007,inset 0 1px #ffffff12}.canvas-wrap{box-shadow:0 0 40px #61e5b20a}.modal h2{color:#effff6}.primary{letter-spacing:.4px}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
 @media(max-width:700px){.top{flex-wrap:wrap;padding:12px 10px 0}.brand{flex:1 1 100%}.top-actions{width:100%;justify-content:flex-end}.top-actions .iconbtn{flex-shrink:0}.sub{font-size:10px;letter-spacing:1.5px}.shell{overflow-x:hidden}}
+
+.touch-controls{display:flex;position:relative;align-items:center;justify-content:space-between;gap:12px;margin-top:12px;padding:14px 18px 20px;border:1px solid #8cf5c724;border-radius:16px;background:linear-gradient(135deg,#102b36,#101c30);user-select:none;-webkit-user-select:none}
+#forestJoystick{width:132px;height:144px;flex-shrink:0;position:relative;display:grid;place-items:center;touch-action:none;cursor:grab;-webkit-touch-callout:none}
+.stick-ring{width:120px;height:120px;position:relative;border-radius:50%;border:2px solid #8bcfbd66;background:radial-gradient(circle,#4b8e7940,#0b192b);box-shadow:inset 0 0 24px #0008,0 7px 20px #0004;pointer-events:none}
+.stick-ring span{position:absolute;top:calc(50% - 21px);font-size:36px;color:#8ab9b5;line-height:1}.stick-left{left:9px}.stick-right{right:9px}
+#forestKnob{position:absolute;left:50%;top:50%;width:54px;height:54px;transform:translate(-50%,-50%);border-radius:50%;border:2px solid #d4fff4aa;background:radial-gradient(circle at 30% 20%,#e2fff5,#61bba7 75%);box-shadow:0 5px 16px #0007,inset 0 1px #fff9;transition:transform .16s ease-out;will-change:transform}
+#forestJoystick.steering{cursor:grabbing}#forestJoystick.steering #forestKnob{transition:none}#forestJoystick.steering .stick-ring{border-color:#aaffdd;box-shadow:inset 0 0 24px #0008,0 0 22px #8cf5c733}.stick-label{position:absolute;bottom:-2px;font-size:10px;letter-spacing:2px;color:#a8c8c8}
+.control-hint{color:#d5eee6;font-size:12px;line-height:1.9;text-align:center}.control-hint small{color:#8aa9ad;font-size:10px}
+.forest-jump{width:96px;height:96px;flex-shrink:0;padding:0;border-radius:50%;border:2px solid #a0ffe0;background:linear-gradient(145deg,#149d84,#126277);box-shadow:inset 0 0 0 5px #ffffff12,0 6px 24px #0004;color:#effff8;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;touch-action:none;cursor:pointer;font:inherit;-webkit-tap-highlight-color:transparent}
+.forest-jump span{font-size:30px;line-height:1}.forest-jump b{font-size:13px}.forest-jump.pressed{filter:brightness(1.3);transform:scale(.96)}.forest-jump:focus-visible{outline:3px solid #ffd879;outline-offset:4px}
+@media(max-width:440px){.touch-controls{padding:8px 12px 17px;gap:8px}.control-hint{display:none}#forestJoystick{width:128px;height:136px}.stick-ring{width:114px;height:114px}.forest-jump{width:88px;height:88px}}
+@media(pointer:fine) and (min-width:761px){.touch-controls{padding:8px 24px 15px}#forestJoystick{height:118px;width:116px}.stick-ring{width:100px;height:100px}.forest-jump{width:80px;height:80px}}
 </style>
 </head>
 <body>
@@ -90,14 +90,6 @@ canvas{width:100%;height:auto;display:block;aspect-ratio: 800 / 560;touch-action
       <div class="rush"><span id="zoneName">01 · 새벽의 숲</span><b id="comboLabel">연속 수집을 시작하세요</b><div class="rush-track"><i id="rushFill"></i></div></div><div class="stagebar"><div class="stagefill" id="stagefill"></div></div>
       <div class="canvas-wrap">
         <canvas id="game" width="800" height="560" aria-label="숲속 대모험 게임 화면"></canvas>
-        <div class="mobile-controls" aria-label="모바일 게임 조작">
-          <div class="dpad" aria-label="방향 조작">
-            <button class="dir left" data-key="ArrowLeft" aria-label="왼쪽 이동">◀</button>
-            <span class="dpad-center" aria-hidden="true"></span>
-            <button class="dir right" data-key="ArrowRight" aria-label="오른쪽 이동">▶</button>
-          </div>
-          <button class="jump-btn" data-key="Space" aria-label="점프"><span aria-hidden="true">⬆</span><small>점프</small></button>
-        </div>
         <div class="toast" id="toast"></div>
         <div class="shop-overlay hidden" id="shopOverlay">
           <div class="shop-head"><h2>🛍 숲속 상점</h2><button class="secondary" id="closeShop">닫기 ✕</button></div>
@@ -118,6 +110,11 @@ canvas{width:100%;height:auto;display:block;aspect-ratio: 800 / 560;touch-action
             <button class="primary" id="mainBtn">모험 시작하기&nbsp; ✨</button>
           </div>
         </div>
+      </div>
+      <div class="touch-controls" aria-label="게임 조작부">
+        <div id="forestJoystick" role="group" aria-label="좌우 이동 조이스틱. 누르고 좌우로 드래그하세요."><div class="stick-ring"><span class="stick-left" aria-hidden="true">‹</span><span class="stick-right" aria-hidden="true">›</span><div id="forestKnob"></div></div><span class="stick-label">좌우 이동</span></div>
+        <div class="control-hint">가볍게 밀어서 이동<br><small>손을 떼면 멈춰요</small></div>
+        <button class="forest-jump" id="touchJump" aria-label="점프"><span aria-hidden="true">↑</span><b>점프</b></button>
       </div>
       <div class="tipline"><span>이동 <kbd class="key">←</kbd> <kbd class="key">→</kbd> · 점프 <kbd class="key">SPACE / ↑</kbd></span><span>열매를 모두 모으면 다음 스테이지!</span></div>
       
@@ -153,6 +150,7 @@ const shopItems=[
  {id:'jumppower',icon:'🚀',name:'슈퍼 점프',desc:'점프 높이가 영구적으로 강해져요.',cost:25,unlock:5}
 ];
 let platforms=[],items=[],enemies=[],particles=[],decor=[];
+let stickDirection=0,touchJump=false;
 let combo=0,maxCombo=0,comboTime=0,fever=0,runTime=0,hits=0,stomps=0,nearMisses=0,stageHits=0,coyote=0,jumpBuffer=0,shake=0;
 const reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const zones=[{name:'새벽의 숲',sky:['#102b3e','#306c70','#89a68a'],hills:['#2c6264','#225951','#15443e']},{name:'황혼의 숲',sky:['#271d49','#794d72','#c2927d'],hills:['#654366','#4c3659','#352b4a']},{name:'안개 숲',sky:['#142537','#365b74','#8ba6b0'],hills:['#476c80','#36586d','#244557']},{name:'별빛 숲',sky:['#0c1232','#30295a','#596887'],hills:['#353457','#29294c','#1c2640']}];
@@ -193,15 +191,15 @@ function pop(msg){let el=$('toast');el.textContent=msg;el.classList.add('show');
 function showOverlay(title,text,button,showChars=false){$('modalTitle').textContent=title;$('modalText').textContent=text;$('mainBtn').textContent=button;$('characters').style.display=showChars?'flex':'none';$('overlay').classList.remove('hidden')}
 function hideOverlay(){$('overlay').classList.add('hidden')}
 function start(){if(!started){started=true;totalRuns++;localStorage.setItem('forestQuestRuns',totalRuns);score=0;maxCombo=0;runTime=0;hits=0;stomps=0;nearMisses=0;lives=3+(owned.heart?1:0);shieldReady=!!owned.shield;stage=1;player.speed=owned.speed?4.5:3.5;player.jump=owned.jumppower?-12.2:-10.4;makeStage(stage);renderShop()}paused=false;hideOverlay();$('pauseBtn').innerHTML='Ⅱ <span class="label">일시정지</span>';last=performance.now();cancelAnimationFrame(raf);raf=requestAnimationFrame(loop);beep(520,.08)}
-function pause(){if(!started)return;paused=!paused;if(paused){cancelAnimationFrame(raf);showOverlay('잠깐 쉬어가요','모험은 여기서 기다리고 있어요. 준비가 되면 계속 달려요!','계속하기',false);$('pauseBtn').innerHTML='▶ <span class="label">계속하기</span>'}else{hideOverlay();$('pauseBtn').innerHTML='Ⅱ <span class="label">일시정지</span>';last=performance.now();raf=requestAnimationFrame(loop)}}
-function reset(){cancelAnimationFrame(raf);started=false;paused=false;score=0;lives=3;stage=1;makeStage(stage);showOverlay('새로운 모험을 떠나요','캐릭터를 고르고 열매를 모아 숲의 모든 스테이지를 정복하세요!','모험 시작하기 ✨',true)}
+function pause(){if(!started)return;resetTouch();paused=!paused;if(paused){cancelAnimationFrame(raf);showOverlay('잠깐 쉬어가요','모험은 여기서 기다리고 있어요. 준비가 되면 계속 달려요!','계속하기',false);$('pauseBtn').innerHTML='▶ <span class="label">계속하기</span>'}else{hideOverlay();$('pauseBtn').innerHTML='Ⅱ <span class="label">일시정지</span>';last=performance.now();raf=requestAnimationFrame(loop)}}
+function reset(){resetTouch();cancelAnimationFrame(raf);started=false;paused=false;score=0;lives=3;stage=1;makeStage(stage);showOverlay('새로운 모험을 떠나요','캐릭터를 고르고 열매를 모아 숲의 모든 스테이지를 정복하세요!','모험 시작하기 ✨',true)}
 function collision(a,b){return a.x<b.x+b.w&&a.x+a.w>b.x&&a.y<b.y+b.h&&a.y+a.h>b.y}
 function hurt(){if(invuln>0)return;if(shieldReady){shieldReady=false;invuln=80;particlesAt(player.x+14,player.y+16,'#8cf5c7',20);pop('보호막이 충격을 막았어요!');return}enemies.forEach(e=>e.near=false);lives--;hits++;stageHits++;combo=0;comboTime=0;fever=0;shake=14;invuln=100;particlesAt(player.x+14,player.y+16,'#ff7e92',20);sfx('hit');player.x=35;player.y=482;player.vx=0;player.vy=0;player.jumps=0;coyote=0;jumpBuffer=0;updateHud();if(lives<=0){started=false;cancelAnimationFrame(raf);let best=Number(localStorage.getItem('forestQuestBest')||0);if(score>best){localStorage.setItem('forestQuestBest',score)}updateHud();showOverlay('다시 도전해 볼까요?',summary(),'다시 도전하기',false)}}
 function nextStage(){if(stageHits===0){score+=500*stage;pop('무피격 클리어! +'+500*stage)}sfx('clear');if(stage>=20){started=false;let best=Number(localStorage.getItem('forestQuestBest')||0);if(score>best)localStorage.setItem('forestQuestBest',score);updateHud();showOverlay('숲의 전설이 되었어요!','20개 스테이지 정복! '+summary(),'한 번 더 모험하기',false);return}stage++;makeStage(stage);pop('STAGE '+stage+' · 새로운 숲이 열렸어요!');updateHud()}
 function update(dt){
  clock+=dt; if(invuln>0)invuln-=dt;
  runTime+=dt;shake=Math.max(0,shake-dt);fever=Math.max(0,fever-dt);comboTime=Math.max(0,comboTime-dt);if(comboTime===0)combo=0;
- let left=keys.ArrowLeft||keys.KeyA,right=keys.ArrowRight||keys.KeyD,jump=keys.Space||keys.ArrowUp||keys.KeyW;
+ let left=keys.ArrowLeft||keys.KeyA||stickDirection<0,right=keys.ArrowRight||keys.KeyD||stickDirection>0,jump=keys.Space||keys.ArrowUp||keys.KeyW||touchJump;
  const target=((right?1:0)-(left?1:0))*player.speed;
  player.vx+=(target-player.vx)*Math.min(1,.3*dt);if(Math.abs(player.vx)>.1)player.dir=player.vx>0?1:-1;
  coyote=player.ground?7:Math.max(0,coyote-dt);jumpBuffer=jump&&!jumpLatch?8:Math.max(0,jumpBuffer-dt);
@@ -264,7 +262,7 @@ function renderShop(){
   card.appendChild(btn);$('shopGrid').appendChild(card);
  });
 }
-function openShop(){paused=started; if(started)cancelAnimationFrame(raf);$('shopOverlay').classList.remove('hidden');renderShop()}
+function openShop(){resetTouch();paused=started; if(started)cancelAnimationFrame(raf);$('shopOverlay').classList.remove('hidden');renderShop()}
 function closeShop(){ $('shopOverlay').classList.add('hidden');if(started&&paused){paused=false;last=performance.now();raf=requestAnimationFrame(loop)}}
 $('shopBtn').addEventListener('click',openShop);$('closeShop').addEventListener('click',closeShop);
 window.addEventListener('keydown',e=>{if(['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','Space'].includes(e.code))e.preventDefault();keys[e.code]=true;if(e.code==='Escape')pause();if(e.code==='KeyP')pause()});
@@ -273,7 +271,17 @@ document.querySelectorAll('.char').forEach(b=>b.addEventListener('click',()=>{ch
 $('mainBtn').addEventListener('click',()=>{if(!started){if(lives<=0)reset();start()}else if(paused){paused=false;hideOverlay();last=performance.now();raf=requestAnimationFrame(loop)}else start()});
 $('pauseBtn').addEventListener('click',pause);$('restartBtn').addEventListener('click',reset);
 $('soundBtn').addEventListener('click',()=>{sound=!sound;$('soundBtn').innerHTML=(sound?'🔊':'🔇')+' <span class="label">소리</span>';if(sound)beep(650,.08)});
-document.querySelectorAll('[data-key]').forEach(b=>{const k=b.dataset.key;const down=e=>{e.preventDefault();try{b.setPointerCapture(e.pointerId)}catch(_){}keys[k]=true};const up=e=>{e.preventDefault();keys[k]=false};b.addEventListener('pointerdown',down);b.addEventListener('pointerup',up);b.addEventListener('pointerleave',up);b.addEventListener('pointercancel',up);b.addEventListener('lostpointercapture',up)});window.addEventListener('blur',()=>{keys={};jumpLatch=false;if(started&&!paused)pause()});document.addEventListener('visibilitychange',()=>{if(document.hidden){keys={};jumpLatch=false;if(started&&!paused)pause()}});
+const stick=$('forestJoystick'),knob=$('forestKnob'),jumpButton=$('touchJump');
+let stickPointer=null,jumpPointer=null;
+function resetStick(){stickPointer=null;stickDirection=0;stick.classList.remove('steering');knob.style.transform='translate(-50%,-50%)'}
+function resetTouch(){resetStick();jumpPointer=null;touchJump=false;jumpButton.classList.remove('pressed')}
+function moveStick(e){if(e.pointerId!==stickPointer)return;e.preventDefault();const r=stick.getBoundingClientRect(),dx=e.clientX-(r.left+r.width/2),dy=e.clientY-(r.top+r.height/2),limit=32,len=Math.hypot(dx,dy),scale=len>limit?limit/len:1;knob.style.transform=`translate(calc(-50% + ${dx*scale}px),calc(-50% + ${dy*scale}px))`;stickDirection=Math.abs(dx)<10?0:Math.sign(dx)}
+stick.addEventListener('pointerdown',e=>{if(stickPointer!==null||(e.pointerType==='mouse'&&e.button!==0))return;e.preventDefault();stickPointer=e.pointerId;stick.setPointerCapture(e.pointerId);stick.classList.add('steering');moveStick(e)});
+stick.addEventListener('pointermove',moveStick);
+for(const ev of ['pointerup','pointercancel','lostpointercapture'])stick.addEventListener(ev,e=>{if(e.pointerId===stickPointer)resetStick()});
+jumpButton.addEventListener('pointerdown',e=>{if(jumpPointer!==null||(e.pointerType==='mouse'&&e.button!==0))return;e.preventDefault();jumpPointer=e.pointerId;touchJump=true;jumpButton.setPointerCapture(e.pointerId);jumpButton.classList.add('pressed')});
+for(const ev of ['pointerup','pointercancel','lostpointercapture'])jumpButton.addEventListener(ev,e=>{if(e.pointerId===jumpPointer){jumpPointer=null;touchJump=false;jumpButton.classList.remove('pressed')}});
+window.addEventListener('blur',()=>{resetTouch();keys={};jumpLatch=false;if(started&&!paused)pause()});document.addEventListener('visibilitychange',()=>{if(document.hidden){resetTouch();keys={};jumpLatch=false;if(started&&!paused)pause()}});
 makeStage(1);renderShop();draw();
 })();
 </script>
